@@ -1,0 +1,53 @@
+/* =========================================================
+   MISKONSEPSI TERBANYAK
+
+   KHUSUS untuk miskonsepsi_terbanyak.php SAJA.
+   File ini MELENGKAPI persentase_miskonsepsi.css (kartu, panel,
+   tabel, formula-info, dsb sudah didefinisikan di sana) - load
+   admin-common.css, admin-layout.css, dan persentase_miskonsepsi.css
+   dulu sebelum file ini.
+========================================================= */
+
+
+/* =========================================================
+   PANEL BAR CHART (full width, di atas tabel peringkat)
+========================================================= */
+
+.mt-chart-panel {
+    margin-bottom: 24px;
+}
+
+.mt-chart-wrap {
+    position: relative;
+    height: 380px;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .mt-chart-wrap {
+        height: 300px;
+    }
+}
+
+
+/* =========================================================
+   PANEL TABEL PERINGKAT
+========================================================= */
+
+.mt-table-panel .data-table td {
+    vertical-align: middle;
+}
+
+.mt-table-panel td:nth-child(4) {
+    max-width: 320px;
+}
+
+
+/* =========================================================
+   BADGE JUMLAH MISKONSEPSI (versi netral untuk 0 siswa)
+========================================================= */
+
+.mk-badge-muted {
+    background: #f2f2f2;
+    color: #868e96;
+}

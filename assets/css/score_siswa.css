@@ -1,0 +1,153 @@
+/* =========================================================
+   SCORE SISWA
+
+   KHUSUS untuk score_siswa.php SAJA.
+   Kerangka sidebar/header/main ada di admin-layout.css,
+   reset global ada di admin-common.css — load keduanya
+   dulu sebelum file ini.
+========================================================= */
+
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.panel {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #eeeeee;
+}
+
+.panel-head {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.panel-head h2 {
+    font-size: 18px;
+
+    color: #263238;
+}
+
+
+/* =========================================================
+   FILTER KELAS
+========================================================= */
+
+.filter-form select {
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #eee;
+
+    font-size: 14px;
+
+    color: #444;
+
+    background: white;
+}
+
+
+/* =========================================================
+   TABLE RANKING
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+.data-table th {
+    text-align: left;
+
+    padding: 12px 14px;
+
+    background: #f7f8fc;
+
+    color: #6f6f6f;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 14px;
+
+    border-bottom: 1px solid #f1f1f1;
+
+    color: #333;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.empty-row {
+    text-align: center;
+
+    color: #999;
+
+    padding: 30px !important;
+}
+
+
+/* =========================================================
+   RANK BADGE
+========================================================= */
+
+.rank-badge {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    background: #f1f1f1;
+
+    color: #555;
+
+    font-weight: 700;
+
+    font-size: 13px;
+}
+
+.rank-badge.gold {
+    background: #fff4d6;
+
+    color: #b8860b;
+}
+
+.rank-badge.silver {
+    background: #f0f0f0;
+
+    color: #808080;
+}
+
+.rank-badge.bronze {
+    background: #fbe4d5;
+
+    color: #a0522d;
+}

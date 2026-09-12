@@ -1,0 +1,17 @@
+/* =========================================================
+   ADMIN COMMON
+   Reset & global rules dipakai SEMUA halaman admin.
+   Jangan taruh style spesifik fitur di sini.
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f7f8fc;
+    color: #333;
+}

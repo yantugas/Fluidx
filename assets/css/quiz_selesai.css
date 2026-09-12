@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f1f5f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+.finish-container {
+    width: 100%;
+    max-width: 520px;
+}
+
+.finish-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 35px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.finish-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eafff3;
+    border-radius: 50%;
+
+    font-size: 40px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.finish-card h1 {
+    font-size: 26px;
+    color: #263238;
+
+    margin-bottom: 10px;
+}
+
+.finish-name {
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #27aeb5;
+
+    margin-bottom: 14px;
+}
+
+.finish-text {
+    color: #64748b;
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.finish-info {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 14px 16px;
+
+    color: #475569;
+    font-size: 13px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-home {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #5ce1e6;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.btn-home:hover {
+    background: #32b9bf;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .finish-card {
+        padding: 32px 22px;
+    }
+
+    .finish-card h1 {
+        font-size: 22px;
+    }
+}

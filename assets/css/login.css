@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f1f5f9;
+
+    padding: 20px;
+}
+
+
+/* CONTAINER */
+
+.login-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* CARD */
+
+.login-card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* KEMBALI */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* HEADER */
+
+.login-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 30px;
+
+    color: #0f172a;
+
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* LOGIN OPTIONS */
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* LOGIN OPTION */
+
+.login-option {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.login-option:hover {
+    border-color: #2563eb;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ICON */
+
+.login-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #eff6ff;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+}
+
+
+/* INFO */
+
+.login-info {
+    flex: 1;
+}
+
+.login-info h3 {
+    color: #1e293b;
+
+    margin-bottom: 6px;
+
+    font-size: 17px;
+}
+
+.login-info p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* PANAH */
+
+.arrow {
+    font-size: 25px;
+
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+
+/* REGISTER */
+
+.register-link {
+    text-align: center;
+
+    margin-top: 28px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+.register-link p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 25px;
+    }
+
+    .login-option {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .login-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 22px;
+    }
+
+    .login-info h3 {
+        font-size: 15px;
+    }
+
+    .login-info p {
+        font-size: 12px;
+    }
+}

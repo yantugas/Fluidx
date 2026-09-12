@@ -1,0 +1,442 @@
+/* =========================================================
+   KELOLA SOAL
+
+   KHUSUS untuk kelola_soal.php SAJA.
+   Kerangka sidebar/header/main ada di admin-layout.css,
+   reset global ada di admin-common.css — load keduanya
+   dulu sebelum file ini.
+========================================================= */
+
+
+/* =========================================================
+   ALERT MESSAGE
+========================================================= */
+
+.alert-box {
+    padding: 14px 18px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.alert-box.success {
+    background: #eafff2;
+
+    color: #1c8a4b;
+
+    border: 1px solid #b9f0cf;
+}
+
+.alert-box.error {
+    background: #fff1f1;
+
+    color: #c53030;
+
+    border: 1px solid #f6c7c7;
+}
+
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.panel {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #eeeeee;
+}
+
+.panel-head {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.panel-head h2 {
+    font-size: 18px;
+
+    color: #263238;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn-primary {
+    background: #5ce1e6;
+
+    color: white;
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #32b9bf;
+}
+
+.btn-secondary {
+    background: #f1f1f1;
+
+    color: #444;
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #e4e4e4;
+}
+
+.btn-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 8px;
+
+    border: 1px solid #eee;
+
+    background: white;
+
+    color: #5ce1e6;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 6px;
+
+    text-decoration: none;
+}
+
+.btn-icon:hover {
+    background: #eefcfd;
+}
+
+.btn-icon.danger {
+    color: #e05252;
+}
+
+.btn-icon.danger:hover {
+    background: #fff1f1;
+}
+
+
+/* =========================================================
+   TABLE SOAL
+========================================================= */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+.data-table th {
+    text-align: left;
+
+    padding: 12px 14px;
+
+    background: #f7f8fc;
+
+    color: #6f6f6f;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 14px;
+
+    border-bottom: 1px solid #f1f1f1;
+
+    color: #333;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.empty-row {
+    text-align: center;
+
+    color: #999;
+
+    padding: 30px !important;
+}
+
+.soal-cell {
+    max-width: 320px;
+}
+
+.aksi-cell {
+    white-space: nowrap;
+}
+
+.badge-key {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 8px;
+
+    background: #eefcfd;
+
+    color: #27aeb5;
+
+    font-weight: 700;
+
+    font-size: 13px;
+}
+
+.badge-status {
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.badge-status.active {
+    background: #eafff2;
+
+    color: #1c8a4b;
+}
+
+.badge-status.inactive {
+    background: #f1f1f1;
+
+    color: #888;
+}
+
+
+/* =========================================================
+   FORM SOAL (MODAL)
+========================================================= */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 13px;
+
+    color: #555;
+
+    margin-bottom: 6px;
+
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 11px 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-section-title {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #27aeb5;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    margin: 22px 0 12px;
+}
+
+.option-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+.form-note {
+    font-size: 12.5px;
+
+    color: #888;
+
+    line-height: 1.6;
+
+    background: #f7f8fc;
+
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal-overlay {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    z-index: 2000;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal-box {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    width: 100%;
+
+    max-width: 620px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 19px;
+
+    color: #263238;
+}
+
+.modal-close {
+    border: none;
+
+    background: #f1f1f1;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .option-grid {
+        grid-template-columns: 1fr;
+    }
+}

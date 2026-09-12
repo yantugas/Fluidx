@@ -1,0 +1,197 @@
+/* =========================================================
+   HALAMAN MATERI (PUBLIK)
+
+   Khusus untuk materi.php. Reset, navbar, dan footer global
+   sudah ada di style.css — load style.css dulu sebelum file ini.
+========================================================= */
+
+
+/* Logo di navbar materi.php dibuat sebagai <a>, hilangkan garis bawah */
+.navbar .logo {
+    text-decoration: none;
+}
+
+.nav-menu a.active {
+    color: #2563eb;
+}
+
+
+/* ================= HEADER MATERI ================= */
+
+.materi-header {
+    padding: 150px 8% 40px;
+}
+
+
+/* ================= DAFTAR MATERI ================= */
+
+.materi-list-section {
+    padding: 20px 8% 80px;
+}
+
+.materi-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.materi-card {
+    background: white;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    padding: 26px 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.materi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.materi-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+
+    margin-bottom: 16px;
+
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.materi-icon.tipe-pdf {
+    background: #fdecec;
+    color: #d64545;
+}
+
+.materi-icon.tipe-ppt,
+.materi-icon.tipe-pptx {
+    background: #fdeeea;
+    color: #d0561f;
+}
+
+.materi-icon.tipe-doc,
+.materi-icon.tipe-docx {
+    background: #e9f1fd;
+    color: #2563eb;
+}
+
+.materi-icon.tipe-xls,
+.materi-icon.tipe-xlsx {
+    background: #e9fbf1;
+    color: #1c8a4b;
+}
+
+.materi-body {
+    flex: 1;
+
+    margin-bottom: 18px;
+}
+
+.materi-body h3 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 8px;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.materi-body p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.materi-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.materi-meta span {
+    background: #f1f5f9;
+    color: #475569;
+
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.materi-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    text-align: center;
+
+    padding: 12px 20px;
+}
+
+
+/* ================= EMPTY STATE ================= */
+
+.materi-empty {
+    max-width: 420px;
+    margin: 0 auto 80px;
+
+    text-align: center;
+
+    color: #64748b;
+}
+
+.materi-empty i {
+    font-size: 48px;
+    color: #cbd5e1;
+    margin-bottom: 16px;
+}
+
+.materi-empty h3 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .materi-header {
+        padding: 130px 7% 30px;
+    }
+
+    .materi-list-section {
+        padding: 10px 7% 60px;
+    }
+
+    .materi-grid {
+        grid-template-columns: 1fr;
+    }
+}
